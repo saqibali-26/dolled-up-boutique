@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dolled Up Boutique — Women's, Children's & Gifted Finds</title>
+<meta name="description" content="Shop Dolled Up Boutique for feminine women's fashion, girls' and boys' styles, accessories, gifts and curated finds. Family owned in Cherry Hill, NJ with shipping and in-store pickup.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+:root{--pink:#f6d8df;--blush:#fbecef;--rose:#b95f78;--deep:#261d20;--cream:#fbf7f2;--line:#e8dfe0;--white:#fff;--muted:#756b6e;--max:1380px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--deep);font-family:"DM Sans",sans-serif}a{text-decoration:none;color:inherit}button,input{font:inherit}.wrap{width:min(calc(100% - 48px),var(--max));margin:auto}.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}.serif{font-family:"Playfair Display",serif}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--deep);min-height:48px;padding:0 20px;font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;transition:.25s}.btn-dark{background:var(--deep);color:#fff}.btn-light{background:#fff}.btn:hover{transform:translateY(-2px)}.btn:after{content:"↗";font-size:14px}
+.top{background:var(--deep);color:#fff;text-align:center;padding:9px;font-size:10px;letter-spacing:.13em;text-transform:uppercase}
+.promo{background:var(--pink);padding:10px 0;font-size:11px;text-align:center;letter-spacing:.05em}.promo b{margin-right:8px}
+header{background:var(--cream);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}.nav{height:82px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}.navlinks{display:flex;gap:24px}.navlinks a{font-size:10px;letter-spacing:.14em;text-transform:uppercase}.logo{text-align:center;font:400 31px/1 "Playfair Display",serif}.logo small{display:block;font:600 8px "DM Sans",sans-serif;letter-spacing:.25em;margin-top:5px}.navright{display:flex;justify-content:flex-end;align-items:center;gap:18px}.icon{font-size:18px}.menu{display:none;border:0;background:none;font-size:22px}
+.hero{display:grid;grid-template-columns:46% 54%;min-height:720px;background:var(--blush)}.hero-copy{padding:clamp(55px,8vw,110px);display:flex;flex-direction:column;justify-content:center}.hero h1{font:400 clamp(55px,7vw,105px)/.88 "Playfair Display",serif;letter-spacing:-.055em;margin:16px 0 25px;max-width:720px}.hero h1 em{color:var(--rose)}.hero p{max-width:530px;color:#675d60;line-height:1.75;font-size:16px;margin:0 0 30px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.hero-notes{display:flex;gap:28px;border-top:1px solid #dfcdd1;padding-top:18px;margin-top:35px}.hero-notes span{font-size:10px;text-transform:uppercase;letter-spacing:.11em}.hero-visual{position:relative;min-height:720px;overflow:hidden;background:#ead2d8}.hero-visual img{width:100%;height:100%;object-fit:cover}.hero-badge{position:absolute;right:25px;top:25px;width:104px;height:104px;border-radius:50%;border:1px solid #fff;display:grid;place-items:center;text-align:center;color:#fff;background:#0003;backdrop-filter:blur(4px);font-size:9px;letter-spacing:.12em;text-transform:uppercase}.hero-card{position:absolute;bottom:24px;left:24px;background:#fff;padding:18px 20px;min-width:220px}.hero-card b{font:400 21px "Playfair Display",serif}.hero-card span{display:block;font-size:9px;letter-spacing:.12em;text-transform:uppercase;margin-top:5px;color:var(--muted)}
+.trust{background:#fff;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}.trust-item{padding:25px 20px;border-right:1px solid var(--line);text-align:center}.trust-item:last-child{border:0}.trust-item strong{display:block;font:400 20px "Playfair Display",serif}.trust-item span{display:block;color:var(--muted);font-size:9px;letter-spacing:.12em;text-transform:uppercase;margin-top:4px}
+.section{padding:105px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}.head h2{font:400 clamp(42px,5vw,68px)/.94 "Playfair Display",serif;margin:10px 0 0;letter-spacing:-.04em}.head p{max-width:420px;color:var(--muted);font-size:13px}
+.category-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:12px}.cat{position:relative;min-height:530px;overflow:hidden;background:#e6d1d5}.cat:nth-child(2),.cat:nth-child(3){min-height:255px}.cat img{width:100%;height:100%;object-fit:cover;transition:.6s}.cat:hover img{transform:scale(1.04)}.cat:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(38,29,32,.68))}.cat-content{position:absolute;z-index:2;bottom:0;padding:25px;color:#fff}.cat-content h3{font:400 37px "Playfair Display",serif;margin:7px 0}.cat-content p{font-size:11px;max-width:330px;margin:0 0 12px;color:#fff9}.cat-content span{font-size:9px;text-transform:uppercase;letter-spacing:.15em;border-bottom:1px solid #fff;padding-bottom:4px}
+.products{background:#fff}.tabs{display:flex;gap:10px;margin-bottom:28px;overflow:auto}.tab{border:1px solid var(--line);background:#fff;padding:11px 15px;font-size:9px;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap;cursor:pointer}.tab.active{background:var(--deep);color:#fff;border-color:var(--deep)}.product-track{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(225px,1fr);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}.product{scroll-snap-align:start;min-width:225px}.product-img{height:355px;background:#f3e6e9;position:relative;overflow:hidden}.product-img img{width:100%;height:100%;object-fit:cover;transition:.45s}.product:hover .product-img img{transform:scale(1.035)}.badge{position:absolute;left:10px;top:10px;background:#fff;padding:7px 9px;font-size:8px;text-transform:uppercase;letter-spacing:.12em}.heart{position:absolute;right:10px;top:10px;background:#fff;border:0;width:32px;height:32px;border-radius:50%;cursor:pointer}.product-info{padding:13px 2px}.product-info .type{font-size:8px;text-transform:uppercase;letter-spacing:.14em;color:#9b8c90}.product-info h3{font:400 18px/1.2 "Playfair Display",serif;margin:6px 0}.price{font-size:12px}.old{text-decoration:line-through;color:#aaa;margin-right:5px}.sale{color:var(--rose);font-weight:600}
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:620px}.split-img{min-height:620px;background:#ead7dc}.split-img img{width:100%;height:100%;object-fit:cover}.split-copy{background:var(--deep);color:#fff;padding:clamp(45px,7vw,95px);display:flex;flex-direction:column;justify-content:center}.split-copy .eyebrow{color:#efb9c8}.split-copy h2{font:400 clamp(45px,6vw,76px)/.94 "Playfair Display",serif;margin:16px 0 22px}.split-copy h2 em{color:#efb9c8}.split-copy p{max-width:510px;color:#d4cacc;line-height:1.75;font-size:14px}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:27px 0}.mini{border-top:1px solid #ffffff2b;padding-top:13px;font-size:11px;color:#eee}.mini b{display:block;font:400 22px "Playfair Display",serif;color:#fff;margin-bottom:3px}
+.shop-by{background:var(--pink)}.age-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.age{background:#fff;min-height:240px;padding:23px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}.age:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,#fff,#f7dce2 70%)}.age>*{position:relative}.age h3{font:400 27px "Playfair Display",serif;margin:0 0 7px}.age p{font-size:10px;color:var(--muted);margin:0 0 13px}.age a{font-size:9px;text-transform:uppercase;letter-spacing:.14em;text-decoration:underline;text-underline-offset:4px}
+.story{display:grid;grid-template-columns:40% 60%;background:#fff}.story-img{min-height:560px;background:#e5cfd5}.story-img img{width:100%;height:100%;object-fit:cover}.story-copy{padding:75px 9%;display:flex;flex-direction:column;justify-content:center}.story-copy h2{font:400 clamp(42px,5vw,67px)/.96 "Playfair Display",serif;margin:15px 0 22px}.story-copy p{max-width:570px;color:var(--muted);line-height:1.8;font-size:14px}.signature{font:italic 28px "Playfair Display",serif;margin:20px 0 28px}.press{display:inline-flex;border:1px solid var(--line);padding:12px 15px;font-size:9px;text-transform:uppercase;letter-spacing:.13em;width:max-content}
+.reviews{background:var(--cream)}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.review{background:#fff;padding:31px;min-height:270px;display:flex;flex-direction:column}.stars{color:var(--rose);letter-spacing:.12em;font-size:11px}.review blockquote{font:400 21px/1.4 "Playfair Display",serif;margin:25px 0}.review cite{margin-top:auto;font-style:normal;font-size:9px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+.newsletter{background:var(--deep);color:#fff;text-align:center;padding:90px 20px}.newsletter h2{font:400 clamp(42px,5vw,68px)/.95 "Playfair Display",serif;margin:14px auto;max-width:760px}.newsletter p{color:#d2c6c8;max-width:530px;margin:0 auto 25px;font-size:13px}.form{display:flex;max-width:500px;margin:auto}.form input{flex:1;border:1px solid #ffffff44;background:#fff;color:var(--deep);padding:16px}.form button{border:0;background:var(--pink);color:var(--deep);padding:0 20px;font-size:9px;letter-spacing:.13em;text-transform:uppercase;font-weight:600}
+footer{background:#181315;color:#fff;padding:65px 0 28px}.footgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1.3fr;gap:45px;padding-bottom:45px;border-bottom:1px solid #ffffff1c}.footlogo{font:400 36px "Playfair Display",serif}.footlogo small{display:block;font:600 8px "DM Sans",sans-serif;letter-spacing:.25em}.footgrid p,.footlinks a,.footlinks span{font-size:11px;color:#c5bbbe;line-height:1.7}.ftitle{font-size:9px;text-transform:uppercase;letter-spacing:.16em;margin-bottom:17px}.footlinks{display:grid;gap:8px}.bottom{display:flex;justify-content:space-between;padding-top:23px;color:#8f8487;font-size:9px}
+.cartbar{position:fixed;bottom:0;left:0;right:0;background:var(--deep);color:#fff;padding:10px;z-index:100;display:none}.cartbar a{display:flex;justify-content:center;background:#fff;color:var(--deep);height:46px;align-items:center;font-size:9px;text-transform:uppercase;letter-spacing:.14em;font-weight:600}
+
+
+/* Contrast safeguards */
+.split-copy .btn-light,.newsletter .btn-light{background:#fff!important;color:var(--deep)!important;border-color:#fff!important}
+.hero .btn-light{color:var(--deep)!important;background:#fff!important;border-color:var(--deep)!important}
+.cat-content span,.product-info,.product-info h3,.price{color:inherit}
+
+/* Premium editorial hero v2 */
+.hero-v2{grid-template-columns:43% 57%;min-height:760px;background:#f7e8ec}
+.hero-v2 .hero-copy{padding:70px clamp(28px,6vw,92px);position:relative;z-index:2}
+.hero-kicker{display:flex;align-items:center;gap:10px;font-size:9px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:#8d6d76}
+.hero-kicker span{font-family:"Playfair Display",serif;font-size:16px;color:var(--rose)}
+.hero-kicker i{width:34px;height:1px;background:#d3b9c0;display:inline-block}
+.hero-v2 h1{font-size:clamp(60px,7.2vw,108px);line-height:.84;margin:24px 0 28px}
+.hero-v2 h1 em{font-style:italic}
+.hero-v2 .hero-copy>p{font-size:15px;line-height:1.8;max-width:475px}
+.hero-actions{align-items:center}
+.hero-btn{background:var(--deep)!important;color:#fff!important;border-color:var(--deep)!important}
+.hero-btn span{font-size:15px}
+.text-link{font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;border-bottom:1px solid var(--deep);padding-bottom:6px}
+.hero-text-link{color:var(--deep)!important}
+.hero-proof{display:flex;gap:18px;flex-wrap:wrap;margin-top:42px;padding-top:18px;border-top:1px solid #ddc9ce}
+.hero-proof span{font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:#76686c}
+.hero-proof b{color:var(--rose);margin-right:4px}
+.hero-editorial{background:#ead6dc;position:relative;overflow:hidden;display:block}
+.hero-image-main{position:absolute;inset:0 24% 0 0;overflow:hidden}
+.hero-image-main img{width:100%;height:100%;object-fit:cover}
+.hero-side-card{position:absolute;right:0;top:12%;width:38%;background:#fff;box-shadow:0 18px 45px #34262a1c}
+.side-image{height:260px;overflow:hidden}
+.side-image img{width:100%;height:100%;object-fit:cover}
+.side-copy{padding:19px 19px 21px}
+.side-copy span{font-size:8px;letter-spacing:.16em;color:#92737b}
+.side-copy strong{display:block;font:400 29px/1 "Playfair Display",serif;margin:7px 0 15px}
+.side-copy a{font-size:9px;text-transform:uppercase;letter-spacing:.13em;text-decoration:underline;text-underline-offset:5px}
+.hero-number{position:absolute;left:22px;top:22px;color:#fff;font:400 31px/.8 "Playfair Display",serif;letter-spacing:-.05em;text-shadow:0 2px 12px #0003}
+.hero-number small{font:500 9px "DM Sans",sans-serif;letter-spacing:.15em}
+.hero-label{position:absolute;left:22px;bottom:21px;color:#fff;font-size:8px;letter-spacing:.19em;text-transform:uppercase;text-shadow:0 2px 12px #0005}
+
+@media(max-width:1000px){
+  .hero-v2{grid-template-columns:1fr}
+  .hero-v2 .hero-copy{padding:58px 7% 55px}
+  .hero-editorial{min-height:620px}
+}
+@media(max-width:620px){
+  .hero-v2 h1{font-size:58px}
+  .hero-v2 .hero-copy{padding:50px 22px}
+  .hero-proof{gap:11px}
+  .hero-editorial{min-height:540px}
+  .hero-image-main{inset:0 17% 0 0}
+  .hero-side-card{width:43%;top:10%;box-shadow:0 12px 30px #34262a22}
+  .side-image{height:185px}
+  .side-copy{padding:14px}
+  .side-copy strong{font-size:23px}
+  .hero-label{font-size:7px}
+}
+@media(max-width:1000px){.navlinks{display:none}.nav{grid-template-columns:auto 1fr auto}.menu{display:block}.hero{grid-template-columns:1fr}.hero-visual{min-height:590px}.trust-grid{grid-template-columns:1fr 1fr}.trust-item:nth-child(2){border-right:0}.trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}.category-grid{grid-template-columns:1fr 1fr}.cat:first-child{grid-column:1/-1}.cat{min-height:360px!important}.age-grid{grid-template-columns:repeat(3,1fr)}.split,.story{grid-template-columns:1fr}.split-img,.story-img{min-height:520px}.review-grid{grid-template-columns:1fr}.footgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){body{padding-bottom:67px}.wrap{width:min(calc(100% - 28px),var(--max))}.logo{font-size:26px}.nav{height:68px}.hero-copy{padding:55px 22px}.hero h1{font-size:58px}.hero-visual{min-height:470px}.hero-notes{gap:12px;flex-wrap:wrap}.section{padding:76px 0}.head{display:block}.head h2{font-size:47px}.head p{margin-top:18px}.category-grid{grid-template-columns:1fr}.cat:first-child{grid-column:auto}.cat{min-height:380px!important}.product-track{grid-auto-columns:76vw}.product-img{height:420px}.age-grid{grid-template-columns:1fr 1fr}.age{min-height:190px}.split-img,.story-img{min-height:420px}.mini-grid{grid-template-columns:1fr}.form{display:grid;gap:8px}.form button{height:48px}.footgrid{grid-template-columns:1fr}.bottom{display:block}.bottom div+div{margin-top:8px}.cartbar{display:block}}
+</style>
+</head>
+<body>
+<div class="top">Cherry Hill, NJ · Family owned · Shop online + pick up in store</div>
+<div class="promo"><b>BOGO FREE</b> Mommy & Me + Tween · <b>Next-day shipping</b> + in-store pickup</div>
+
+<header>
+  <div class="wrap nav">
+    <button class="menu" onclick="alert('Mobile menu: connect this button to your Shopify drawer menu.')">☰</button>
+    <nav class="navlinks">
+      <a href="#shop">Shop</a><a href="/collections/womens">Women</a><a href="/collections/children">Children</a><a href="/collections/accessories">Accessories</a>
+    </nav>
+    <a class="logo" href="/">dolled up<small>BOUTIQUE · CHERRY HILL, NJ</small></a>
+    <div class="navright"><a class="icon" href="/search">⌕</a><a class="icon" href="/account">♙</a><a class="icon" href="/cart">♡</a><a class="icon" href="/cart">bag</a></div>
+  </div>
+</header>
+
+<main>
+<section class="hero hero-v2">
+  <div class="hero-copy">
+    <div class="hero-kicker"><span>01</span> THE DOLLED UP EDIT <i></i> CHERRY HILL, NJ</div>
+    <h1>Made for the<br><em>main character.</em></h1>
+    <p>Women's pieces with personality. Little looks with charm. Gifts that feel like you found them just for her.</p>
+    <div class="hero-actions">
+      <a class="btn btn-dark hero-btn" href="/collections/womens">Shop the women's edit <span>↗</span></a>
+      <a class="text-link hero-text-link" href="/collections/children">Explore little dolls <span>↗</span></a>
+    </div>
+    <div class="hero-proof">
+      <span><b>NEW</b> Fall arrivals</span>
+      <span><b>FAST</b> Next-day shipping</span>
+      <span><b>LOCAL</b> In-store pickup</span>
+    </div>
+  </div>
+  <div class="hero-visual hero-editorial">
+    <div class="hero-image-main">
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=88" alt="Dolled Up women's fashion editorial">
+    </div>
+    <div class="hero-side-card">
+      <div class="side-image"><img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=700&q=85" alt="Dolled Up children's fashion"></div>
+      <div class="side-copy"><span>FOR LITTLE DOLLS</span><strong>Playful<br>looks.</strong><a href="/collections/children">Shop kids ↗</a></div>
+    </div>
+    <div class="hero-number">DU<br><small>26</small></div>
+    <div class="hero-label">WOMEN · CHILDREN · GIFTS</div>
+  </div>
+</section>
+
+<section class="trust"><div class="wrap trust-grid">
+  <div class="trust-item"><strong>Next-day shipping</strong><span>Fast delivery on qualifying orders</span></div>
+  <div class="trust-item"><strong>In-store pickup</strong><span>Cherry Hill, NJ</span></div>
+  <div class="trust-item"><strong>Family owned</strong><span>Curated with care</span></div>
+  <div class="trust-item"><strong>Gift cards</strong><span>For every kind of doll</span></div>
+</div></section>
+
+<section class="section" id="shop"><div class="wrap">
+  <div class="head"><div><div class="eyebrow">Shop by mood</div><h2>Find your <em>kind of pretty.</em></h2></div><p>From one-of-a-kind women's pieces to tiny treasures, browse by the person you're shopping for — or simply follow your mood.</p></div>
+  <div class="category-grid">
+    <a class="cat" href="/collections/womens"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=85" alt="Women's fashion"><div class="cat-content"><div class="eyebrow">For her</div><h3>Women's</h3><p>Feminine, romantic and timeless pieces for the modern doll.</p><span>Shop women's ↗</span></div></a>
+    <a class="cat" href="/collections/children"><img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=900&q=85" alt="Children's fashion"><div class="cat-content"><div class="eyebrow">For little dolls</div><h3>Girls</h3><p>Playful, whimsical and made to be remembered.</p><span>Shop girls ↗</span></div></a>
+    <a class="cat" href="/collections/baby"><img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=900&q=85" alt="Baby clothing"><div class="cat-content"><div class="eyebrow">For tiny dolls</div><h3>Baby</h3><p>Soft, delicate pieces for the sweetest first moments.</p><span>Shop baby ↗</span></div></a>
+  </div>
+</div></section>
+
+<section class="section products"><div class="wrap">
+  <div class="head"><div><div class="eyebrow">Just in</div><h2>New arrivals, <em>now.</em></h2></div><a class="btn btn-dark" href="/collections/new-arrivals">Shop all ↗</a></div>
+  <div class="tabs"><button class="tab active" data-filter="women">Women's edit</button><button class="tab" data-filter="kids">Kids' edit</button><button class="tab" data-filter="gifts">Gifts</button></div>
+  <div class="product-track" id="productTrack">
+    <a class="product" data-cat="women" href="/collections/womens/products/rosie-satin-ruffled-mini-dress"><div class="product-img"><span class="badge">New</span><button class="heart" onclick="event.preventDefault()">♡</button><img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=85" alt="Rosie Satin Ruffled Mini Dress"></div><div class="product-info"><div class="type">Women's · New arrival</div><h3>Rosie Satin Ruffled Mini Dress</h3><div class="price">$70.00</div></div></a>
+    <a class="product" data-cat="women" href="/collections/womens/products/rosie-satin-skirt"><div class="product-img"><span class="badge">New</span><img src="https://images.unsplash.com/photo-1583496661160-fb5886a13d27?auto=format&fit=crop&w=800&q=85" alt="Rosie Satin Skirt"></div><div class="product-info"><div class="type">Women's · New arrival</div><h3>Rosie Satin Skirt</h3><div class="price">$64.00</div></div></a>
+    <a class="product" data-cat="women" href="/collections/womens/products/maisie-heart-knit-cardigan"><div class="product-img"><span class="badge">New</span><img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=85" alt="Maisie Heart Knit Cardigan"></div><div class="product-info"><div class="type">Women's · Knitwear</div><h3>Maisie Heart Knit Cardigan</h3><div class="price">$58.00</div></div></a>
+    <a class="product" data-cat="women" href="/collections/womens/products/gemma-satin-tie-top"><div class="product-img"><img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=85" alt="Gemma Satin Tie Top"></div><div class="product-info"><div class="type">Women's · Satin</div><h3>Gemma Satin Tie Top</h3><div class="price">$55.00</div></div></a>
+    <a class="product" data-cat="kids" href="/collections/children/products/untitled-aug19_11-28-41"><div class="product-img"><span class="badge">Kids</span><img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=800&q=85" alt="Millie 2 Piece Lounge Set"></div><div class="product-info"><div class="type">Baby · New arrival</div><h3>Millie 2 Piece Lounge Set</h3><div class="price">$60.00</div></div></a>
+    <a class="product" data-cat="kids" href="/collections/children"><div class="product-img"><span class="badge">Kids</span><img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=800&q=85" alt="Children's fashion"></div><div class="product-info"><div class="type">Girls · New arrival</div><h3>Petite Tropez Ruffle Top</h3><div class="price">$48.00</div></div></a>
+    <a class="product" data-cat="gifts" href="/collections/gifts"><div class="product-img"><span class="badge">Giftable</span><img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=85" alt="Gift collection"></div><div class="product-info"><div class="type">Gift · Curated</div><h3>Daughters of the King Gift Set</h3><div class="price">$45.00</div></div></a>
+    <a class="product" data-cat="gifts" href="/collections/accessories"><div class="product-img"><span class="badge">Accessory</span><img src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561?auto=format&fit=crop&w=800&q=85" alt="Accessories"></div><div class="product-info"><div class="type">Accessories</div><h3>French Inspired Vintage Coin Pendant</h3><div class="price">$43.00</div></div></a>
+  </div>
+</div></section>
+
+<section class="split"><div class="split-img"><img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1300&q=85" alt="Curated women's fashion"></div><div class="split-copy"><div class="eyebrow">The women's edit</div><h2>Dress the day like it <em>matters.</em></h2><p>Dolled Up's women's collection mixes romantic silhouettes, satin textures, bows, vintage-inspired details and designer-led pieces. The goal isn't to follow every trend — it's to find the pieces that make you feel like yourself, only a little more dressed up.</p><div class="mini-grid"><div class="mini"><b>01</b>New-season silhouettes</div><div class="mini"><b>02</b>Statement accessories</div><div class="mini"><b>03</b>Occasion-ready pieces</div><div class="mini"><b>04</b>Easy everyday favorites</div></div><a class="btn btn-light" href="/collections/womens">Shop women's edit</a></div></section>
+
+<section class="section shop-by"><div class="wrap"><div class="head"><div><div class="eyebrow">Shopping made easier</div><h2>Shop by <em>who you're dressing.</em></h2></div><p>Clear paths for every age means less searching and more finding the piece you came for.</p></div><div class="age-grid">
+  <div class="age"><h3>Women's</h3><p>Feminine, romantic & timeless.</p><a href="/collections/womens">Shop women ↗</a></div>
+  <div class="age"><h3>Girl's</h3><p>Sizes 2T–10/12.</p><a href="/collections/girls">Shop girls ↗</a></div>
+  <div class="age"><h3>Baby Girl's</h3><p>Newborn–24 months.</p><a href="/collections/baby-girl">Shop baby girl ↗</a></div>
+  <div class="age"><h3>Boy's</h3><p>Sizes 2T–5/6.</p><a href="/collections/boys">Shop boys ↗</a></div>
+  <div class="age"><h3>Baby Boy's</h3><p>Newborn–24 months.</p><a href="/collections/baby-boy">Shop baby boy ↗</a></div>
+</div></div></section>
+
+<section class="section"><div class="wrap"><div class="head"><div><div class="eyebrow">More than fashion</div><h2>Little things that make <em>gifts better.</em></h2></div><a class="btn btn-dark" href="/collections/gifts">Shop gifts ↗</a></div><div class="category-grid">
+  <a class="cat" href="/collections/gifts"><img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=1200&q=85" alt="Curated gifts"><div class="cat-content"><div class="eyebrow">For birthdays, babies & just because</div><h3>Giftable finds</h3><p>Gift cards, blankets, beauty, keepsakes, books and little surprises.</p><span>Explore gifts ↗</span></div></a>
+  <a class="cat" href="/collections/accessories"><img src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561?auto=format&fit=crop&w=900&q=85" alt="Jewelry accessories"><div class="cat-content"><div class="eyebrow">The finishing touch</div><h3>Accessories</h3><span>Shop accessories ↗</span></div></a>
+  <a class="cat" href="/collections/sale"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Sale fashion"><div class="cat-content"><div class="eyebrow">Limited pieces</div><h3>The sale edit</h3><span>Shop sale ↗</span></div></a>
+</div></div></section>
+
+<section class="story"><div class="story-img"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1100&q=85" alt="Boutique fashion story"></div><div class="story-copy"><div class="eyebrow">Our story</div><h2>A family dream, <em>all dolled up.</em></h2><p>Dolled Up began in 2023 when Dorothy and her daughter turned a long-held love of fashion and home decor into a boutique. Today, the Cherry Hill store brings together women's fashion, children's clothing, accessories and home-inspired gifts — each selected with care.</p><p>It's a store built around making everyday life feel a little more beautiful, whether you're dressing yourself, your little one or someone you love.</p><div class="signature">xo, Dorothy</div><a class="press" href="/pages/about-us">Read our story ↗</a></div></section>
+
+<section class="section reviews"><div class="wrap"><div class="head"><div><div class="eyebrow">Loved by the dolls</div><h2>Come for the <em>finds.</em> Stay for the feeling.</h2></div><a class="btn btn-dark" href="/pages/about-us">Meet Dolled Up ↗</a></div><div class="review-grid">
+<div class="review"><div class="stars">★★★★★</div><blockquote>“A beautiful little boutique with such a fun selection — it feels like everything has been chosen with care.”</blockquote><cite>Dolled Up community</cite></div>
+<div class="review"><div class="stars">★★★★★</div><blockquote>“The perfect place to find something special for yourself or a gift for someone you love.”</blockquote><cite>Dolled Up community</cite></div>
+<div class="review"><div class="stars">★★★★★</div><blockquote>“The mix of women's, kids and giftable pieces makes it so easy to find something unexpected.”</blockquote><cite>Dolled Up community</cite></div>
+</div></div></section>
+
+<section class="newsletter"><div class="eyebrow">The Dolled Up list</div><h2>First dibs on the pretty stuff.</h2><p>New arrivals, limited pieces, boutique events and little surprises — straight to your inbox.</p><form class="form" onsubmit="event.preventDefault();alert('Connect this form to Shopify Email/Klaviyo before launch.');"><input type="email" placeholder="Your email address" required><button>Join the list ↗</button></form></section>
+</main>
+
+<footer><div class="wrap"><div class="footgrid">
+<div><div class="footlogo">dolled up<small>BOUTIQUE · CHERRY HILL, NJ</small></div><p>Luxury and trending pieces for you and the little fashionista in your life. Family owned and curated in Cherry Hill, New Jersey.</p><a class="btn btn-light" href="/collections/all">Shop all ↗</a></div>
+<div><div class="ftitle">Shop</div><div class="footlinks"><a href="/collections/womens">Women's</a><a href="/collections/children">Children</a><a href="/collections/accessories">Accessories</a><a href="/collections/gifts">Gifts</a><a href="/collections/sale">Sale</a></div></div>
+<div><div class="ftitle">Visit</div><div class="footlinks"><span>2110 Marlton Turnpike<br>Unit 12<br>Cherry Hill, NJ 08003</span><span>Tue–Fri · 11am–5pm<br>Sat · 11am–4pm<br>Sun–Mon · Closed</span></div></div>
+<div><div class="ftitle">Help</div><div class="footlinks"><a href="/pages/contact">Contact</a><a href="/policies/shipping-policy">Shipping</a><a href="/policies/refund-policy">Returns</a><a href="/pages/about-us">About us</a><a href="/cart">Cart</a></div></div>
+</div><div class="bottom"><div>© 2026 Dolled Up Boutique LLC</div><div>Cherry Hill · New Jersey · Powered by Shopify</div></div></div></footer>
+<div class="cartbar"><a href="/cart">View bag · Checkout ↗</a></div>
+
+<script>
+const tabs=document.querySelectorAll('.tab'), cards=[...document.querySelectorAll('.product')];
+tabs.forEach(tab=>tab.addEventListener('click',()=>{
+ tabs.forEach(x=>x.classList.remove('active'));tab.classList.add('active');
+ const filter=tab.dataset.filter;
+ cards.forEach(card=>{card.style.display=(card.dataset.cat===filter)?'block':'none'});
+}));
+</script>
+</body>
+</html>
